@@ -1,0 +1,59 @@
+/* Style cho groove (phần nền của thanh slider) */
+QSlider::groove:horizontal {
+    background: #dddddd; /* Màu nền mặc định */
+    border: 1px solid #999999; /* Viền */
+    height: 3px; /* Độ dày của groove */
+}
+
+/* Style cho handle (nút di chuyển trên thanh slider) */
+QSlider::handle:horizontal {
+    background: #1abc9c; 
+    width: 10px; 
+    height: 10px; 
+    margin: -8px 0; /* Điều chỉnh vị trí của handle */
+    border-radius: 2px; 
+}
+
+QSlider::add-page:horizontal {
+    background: linear-gradient(to left, #b1b1b1 0%, #c4c4c4 100%);
+}
+QSlider::sub-page:horizontal {
+    background: #1abc9c;
+}
+QPushButton {
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+/* Style cho các button */
+QPushButton {
+    background-color: transparent; /* Nền trong suốt */
+    border: 1px solid #999999; /* Viền */
+    border-radius: 4px; /* Bo tròn góc */
+    padding: 8px 16px; /* Khoảng cách bên trong button */
+    font-size: 14px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    color: #333333; /* Màu chữ */
+    text-align: center; /* Căn chỉnh chữ giữa button */
+    text-decoration: none; /* Không gạch chân */
+}
+
+/* Hover effect */
+QPushButton:hover {
+    background-color: #cccccc; /* Màu nền khi hover */
+}
+/* Pressed effect */
+QPushButton:pressed {
+    background-color: #cccccc; /* Màu nền khi nhấn */
+}
+QLabel {
+    font-size: 14px;
+}
+QPushButton:disabled {
+    background-color: #dddddd; /* Màu nền khi vô hiệu hóa */
+    color: #999999; /* Màu văn bản khi vô hiệu hóa */
+}
