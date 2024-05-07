@@ -1,19 +1,19 @@
 # Introduce
 
-Music Player is a desktop application written in Python and PyQt5, allowing users to play music from a playlist, control playback, and add favorite songs to a favorites list.
+Music Player is a desktop application written in Python and PyQt5, allowing users to play music from a playlist, control playback, and add favorite songs to a favorites list
 
 # Installation and Requirements
 ## Requirement
 - Python 3.x [Download Python](https://www.python.org/downloads/)
 - PyQt5
 
-## Clone the respository with following:
+### Clone the respository with following:
 ```
 git clone https://github.com/BlazeeH/audio.git
 cd audio
 ```
 ## Installation
-If Python is not installed on your system, you will need to install it first before installing pip.
+If Python is not installed on your system, you will need to install it first before installing pip
 ### For Windows
 - Download pip from [here](https://pip.pypa.io/en/stable/installation/) or Open cmd and run the following command
 ```
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 - Shuffle and repeat modes for playback
 
 # Usage
-1. Start the application.
+1. Start the application
 2. Click on the "Add" button to add songs to the playlist
 3. Select a song from the playlist and click on the "Play" button to start playback
 4. Control playback using the play, pause, stop, next and go back buttons
