@@ -52,3 +52,6 @@ pip install -r requirements.txt
 5. Adjust volume using the volume slider
 6. Click on the heart icon to add the currently playing song to the favorites list
 7. Click the "Favorites" button to toggle between the playlist and favorites list
+
+# Download report 
+[Here](https://drive.google.com/drive/folders/1vSBl8m1HTYYLEhasnzzQipy2cCYvyTYn)
