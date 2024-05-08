@@ -53,5 +53,5 @@ pip install -r requirements.txt
 6. Click on the heart icon to add the currently playing song to the favorites list
 7. Click the "Favorites" button to toggle between the playlist and favorites list
 
-# Download report 
-[Here](https://drive.google.com/drive/folders/1vSBl8m1HTYYLEhasnzzQipy2cCYvyTYn)
+# Download report LaTeX
+[Here](https://drive.google.com/file/d/1nKeIcs2GGhK4DX4ZAcppQj83igFFdO__/view)
