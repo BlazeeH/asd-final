@@ -163,9 +163,6 @@ class MusicPlayer(QMainWindow):
         self.song_list.itemDoubleClicked.connect(self.play_song) # Hàm double click để phát nhạc
         self.song_list.itemDoubleClicked.connect(self.select_song_double_click)
 
-    def set_volume(self, value):
-        self.player.setVolume(value)
-
     # Phương thức để hiển thị / ẩn thanh trượt âm lượng khi nhấn vào nút âm lượng
     def toggle_volume_slider(self):
         if self.volume_slider.isVisible():
@@ -383,7 +380,6 @@ class MusicPlayer(QMainWindow):
         if selected_item:
             index = self.song_list.row(selected_item)
             self.currently_playing_index = index
-            self.current_position = 0
             self.update_buttons_state()  # Gọi hàm để cập nhật trạng thái nút
 
     def select_song_double_click(self):
@@ -402,19 +398,19 @@ class MusicPlayer(QMainWindow):
             self.play_button.setEnabled(False)
             self.pause_button.setEnabled(True)
 
-    def play_selected_song(self):
-        if not self.player.state() == QMediaPlayer.PlayingState:
-            self.play_button.setEnabled(False)
-            self.pause_button.setEnabled(True)
-            self.play_song()
-        elif self.current_index != self.currently_playing_index:  # Nếu bài hát được chọn khác với bài hát đang phát
-            self.play_button.setEnabled(False)
-            self.pause_button.setEnabled(True)
-            self.currently_playing_index = self.current_index  # Cập nhật chỉ số của bài hát đang phát
-            self.play_song()
-        else:
-            self.play_button.setEnabled(True)
-            self.pause_button.setEnabled(False)       
+    # def play_selected_song(self):
+    #     if not self.player.state() == QMediaPlayer.PlayingState:
+    #         self.play_button.setEnabled(False)
+    #         self.pause_button.setEnabled(True)
+    #         self.play_song()
+    #     elif self.current_index != self.currently_playing_index:  # Nếu bài hát được chọn khác với bài hát đang phát
+    #         self.play_button.setEnabled(False)
+    #         self.pause_button.setEnabled(True)
+    #         self.currently_playing_index = self.current_index  # Cập nhật chỉ số của bài hát đang phát
+    #         self.play_song()
+    #     else:
+    #         self.play_button.setEnabled(True)
+    #         self.pause_button.setEnabled(False)       
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
