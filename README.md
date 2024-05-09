@@ -47,8 +47,8 @@ pip install -r requirements.txt
 # Usage
 1. Start the application
 2. Click on the "Add" button to add songs to the playlist
-3. Select a song from the playlist and click on the "Play" button to start playback
-4. Control playback using the play, pause, stop, next and go back buttons
+3. Select a song from the playlist and double click to play a song
+4. Control song using the play, pause, stop, next and go back buttons
 5. Adjust volume using the volume slider
 6. Click on the heart icon to add the currently playing song to the favorites list
 7. Click the "Favorites" button to toggle between the playlist and favorites list
