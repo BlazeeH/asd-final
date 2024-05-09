@@ -245,9 +245,9 @@ class MusicPlayer(QMainWindow):
                 playlist = self.favorites
             else:
                 playlist = self.playlist
-            if self.is_repeated:
-                self.current_index = (self.current_index + 1) % len(playlist)
-            elif self.shuffle_mode:
+            # if self.is_repeated:
+            #     self.current_index = (self.current_index + 1) % len(playlist)
+            if self.shuffle_mode:
                 self.current_index = random.randint(0, len(playlist) - 1)
             elif self.current_index < len(playlist) - 1:
                 self.current_index += 1
@@ -267,7 +267,9 @@ class MusicPlayer(QMainWindow):
                 playlist = self.favorites
             else:
                 playlist = self.playlist
-            if self.current_index > 0:
+            if self.shuffle_mode:
+                self.current_index = random.randint(0, len(playlist) - 1)    
+            elif self.current_index > 0:
                 self.current_index -= 1
             else:
                 self.current_index = len(playlist) - 1
@@ -396,7 +398,7 @@ class MusicPlayer(QMainWindow):
 
     def update_buttons_state(self):
         if not self.player.state() == QMediaPlayer.PlayingState:
-            self.play_button.setEnabled(True)
+            self.play_button.setEnabled(False)
             self.pause_button.setEnabled(False)
         else:
             self.play_button.setEnabled(False)
