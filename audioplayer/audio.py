@@ -267,9 +267,7 @@ class MusicPlayer(QMainWindow):
                 playlist = self.favorites
             else:
                 playlist = self.playlist
-            if self.shuffle_mode:
-                self.current_index = random.randint(0, len(playlist) - 1)    
-            elif self.current_index > 0:
+            if self.current_index > 0:
                 self.current_index -= 1
             else:
                 self.current_index = len(playlist) - 1
